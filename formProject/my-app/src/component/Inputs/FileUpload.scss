@@ -1,0 +1,180 @@
+.comments {
+  &-container {
+      &-heading {
+          &-form {
+              margin-top: 16px;
+              &-upload{
+                  border-radius: 8px;
+                  box-shadow: 0 3px 6px 0 rgba(165, 170, 181, 0.16);
+                  background-color: white;
+                  gap: 10px;
+                  // @include responsive(md){
+                  //     align-items: start;
+                  // }
+                  &-subbox{
+                          width: 100%;
+                          height: 90px;
+                          display: flex;
+                          border-radius: 5px;
+                          border: dashed 1px darkBlue;
+                          background-color: rgba(226, 226, 247, 0.17);
+                          &-icon{
+                              width: 15%;
+                              height: 100%;
+                              // @include responsive(md){
+                              //     display: none;
+                              // }
+                          }
+                  }
+                  &-drop{
+                      justify-content: center;
+                      align-items: start;
+                      display: flex;
+                      width: 80%;
+                      flex-direction: column;
+                      // @include responsive(md){
+                      //     align-items: center;
+                      //     width: auto;
+                      // }
+                      &-content{
+                          text-align: center;
+                          gap:3px;
+                          svg{
+                              // @include responsive(md){
+                              //     width: 24px;
+                              //     height:20px;
+                              // }
+                          }
+                      }
+                      &-button{
+                          font-size: 14px;
+                          font-weight: 600;
+                          color: RoyalBlue;
+                          margin-right: 16px;
+                          cursor: pointer;
+                      }
+                      &-text{
+                          font-size: 14px;
+                          display: flex;
+                          text-align: center;
+                          justify-content: center;
+                          align-items: center;
+                          gap: 3px;
+                          color: Black;
+                          font-weight: normal;
+                      }
+                      &-subtext{
+                          font-size: 12px;
+                          color: gray;
+                          font-weight: normal;
+                          // @include responsive(md){
+                          //     display: flex;
+                          //     align-items: center;
+                          //     padding: 5px;
+                          // }
+                          &-error{
+                              font-family: 'Open-sans';
+                              font-size: 12px;
+                              font-weight: 500;
+                              font-stretch: normal;
+                              font-style: normal;
+                              line-height: normal;
+                              letter-spacing: normal;
+                              text-align: left;
+                              color: red;
+                              padding: 5px;
+                          }
+                      }
+                  }
+                  &-selected-files{
+                      display: flex;
+                      flex-wrap: wrap;
+                      margin-top: 20px;
+                      // @include responsive(md) {
+                      //     flex-direction: column;
+                      // }
+                      &-items {
+                          border-radius: 8px;
+                          background-color: lightgray;
+                          width: 100%;
+                          height: 33px;
+                          display: flex;
+                      //   @include responsive(md) {
+                      //     width: 150px;
+                      //     height: 40px;
+                      // }
+                      &-content{
+                          width: 80%;
+                      }
+                      &-icon{
+                          font-size: 8px;
+                          font-family:'Open-sans';
+                          font-weight: normal;
+                          text-align: left;
+                          color: Gray;
+                          margin-left: 7px;
+                      }
+                        &-name {
+                          font-size: 10px;
+                          font-weight: 600;
+                          margin: 4px 7px;
+                          overflow: hidden;
+                          text-overflow: ellipsis;
+                          white-space: nowrap;
+                          text-align: left;
+                          color: Black;
+                        }
+                        &-button {
+                          font-size: 10px;
+                          font-weight: 500;
+                          border: none;
+                          background-color: lightgray;
+                          border-radius: 50%;
+                          cursor: pointer;
+                          margin-top: 5px;
+                          align-items: center;
+                        }
+                      }
+                  }
+              }
+  }}
+}
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textfield-v2--label{
+  color:grey;
+  font-size: 18px;
+  font-weight: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.flexbox-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
